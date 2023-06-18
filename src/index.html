@@ -10,17 +10,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="Logo EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar" data-aos="fade-down">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2023 às 19hrs
+                    </li>
+                </ul>
+                <a class="button button--primary" href="#">Garanta sua vaga</a>
+            </div>
         </div>
     </header>
 
+    <section class="event event--frontend">
+        <div class="container">
+            <div class="event__details" data-aos="fade-right">
+                <h2 class="event__details__title">Front-End</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quas, mollitia, expedita obcaecati rem neque vero temporibus quam reprehenderit culpa inventore, veritatis cumque iusto sequi. Animi eius corrupti natus corporis.</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="Front-End" data-aos="fade-left">
+        </div>
+    </section>
+
+    <section class="event event--ui-ux event--image-left">
+        <div class="container">
+            <div class="event__details" data-aos="fade-left">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quas, mollitia, expedita obcaecati rem neque vero temporibus quam reprehenderit culpa inventore, veritatis cumque iusto sequi. Animi eius corrupti natus corporis.</p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI-UX" data-aos="fade-right">
+        </div>
+    </section>
+
+    <section class="event event--data">
+        <div class="container">
+            <div class="event__details" data-aos="fade-right">
+                <h2 class="event__details__title">Data Science </h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quas, mollitia, expedita obcaecati rem neque vero temporibus quam reprehenderit culpa inventore, veritatis cumque iusto sequi. Animi eius corrupti natus corporis.</p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data" data-aos="fade-left">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container">
+            <div class="event__details" data-aos="fade-left">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quas, mollitia, expedita obcaecati rem neque vero temporibus quam reprehenderit culpa inventore, veritatis cumque iusto sequi. Animi eius corrupti natus corporis.</p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Backend" data-aos="fade-right">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
